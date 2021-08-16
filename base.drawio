@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-16T02:18:15.710Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 Edg/92.0.902.67" etag="SNQ9Ba_P0KWp_9zmx1I3" version="14.9.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-16T02:25:19.374Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 Edg/92.0.902.67" etag="wleuz7PtvVhQXk7pmICP" version="14.9.6" type="github">
   <diagram id="a6OnzV1Ndyk_DHkABWHQ" name="第 1 页">
     <mxGraphModel dx="1865" dy="652" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -196,8 +196,14 @@
         <mxCell id="Qp-zmMEZd6aNc9Hle5iR-3" value="检查 videoUploadParam" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
           <mxGeometry x="432.25" y="1250" width="158.5" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Qp-zmMEZd6aNc9Hle5iR-4" value="调用 videoService.videoUpload 方法" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+        <mxCell id="Qp-zmMEZd6aNc9Hle5iR-4" value="调用 videoService.videoUpload 方法，设置 审核、重复状态" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
           <mxGeometry x="414" y="1350" width="198" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qp-zmMEZd6aNc9Hle5iR-5" value="调用&amp;nbsp;poolService.genVideoDocId 据videoId生成 docId" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1350" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qp-zmMEZd6aNc9Hle5iR-7" value="调用&amp;nbsp;userService.getUserInfo 据 userId 获得用户信息" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="900" y="1350" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
